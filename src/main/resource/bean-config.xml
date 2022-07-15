@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!--  Using Setter Injection -->
+	
+<!-- 	<bean class="com.unisys.SpringCoreDemo.Book" name="myBook"> -->
+<!-- 		<property name="id"> -->
+<!-- 			<value>101</value> -->
+<!-- 		</property> -->
+<!-- 		<property name="title"> -->
+<!-- 			<value>Brief History of Time</value> -->
+<!-- 		</property> -->
+<!-- 		<property name="author"> -->
+<!-- 			<value>Stephen Hawkings</value> -->
+<!-- 		</property> -->
+<!-- 	</bean>   -->
+
+<!-- 	<bean class="com.unisys.SpringCoreDemo.Book" name="myBook"> -->
+<!-- 		<property name="id" value="102" /> -->
+<!-- 		<property name="title" value="The Godfather" /> -->
+<!-- 		<property name="author" value="Mario Puzo" /> -->
+<!-- 	</bean> -->
+
+
+<!-- Constructor Injection -->
+
+<!-- 	<bean id="myBook" class="com.unisys.SpringCoreDemo.Book"> -->
+<!-- 		<constructor-arg name="id" value="103" /> -->
+<!-- 		<constructor-arg name="title" value="The Second Lady" /> -->
+<!-- 		<constructor-arg name="author" value="Irwing Wallace" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="myBook" class="com.unisys.SpringCoreDemo.Book"> -->
+<!-- 		<constructor-arg index="0" value="104" /> -->
+<!-- 		<constructor-arg index="1" value="The C++ Programming Language" /> -->
+<!-- 		<constructor-arg index="2" value="Bjarne Stroustrup" /> -->
+<!-- 	</bean> -->
+
+
+	<bean id="myBook" class="com.unisys.SpringCoreDemo.Book">
+		<constructor-arg type="int" value="105" />
+		<constructor-arg type="java.lang.String" value="Java2 Complete Reference" />
+		<constructor-arg type="java.lang.String" value="Herbert Schildt" />
+	</bean>
+</beans>

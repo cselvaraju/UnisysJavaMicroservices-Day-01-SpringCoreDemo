@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="myCollection" class="com.unisys.SpringCoreDemo.CollectionsBean">
+	
+		<!-- Setting the List -->
+		<property name="itemsList">
+			<list>
+				<value>First Item</value>
+				<value>Second Item</value>
+				<value>Third Item</value>
+			</list>
+		</property>
+		
+		<!-- Setting the Set -->
+		<property name="intSet">
+			<set>
+				<value>100</value>
+				<value>200</value>
+				<value>300</value>
+				<value>200</value>
+			</set>
+		</property>
+		
+		<!-- Setting the Map -->
+		<property name="myMap">
+			<map>
+				<entry key="101" value="India" />
+				<entry key="202" value="New Delhi" />
+				<entry key="303" value="Himalayas" />
+			</map>
+		</property>
+		
+		<!-- Setting the Properties -->
+		<property name="myProps">
+			<props>
+				<prop key="one">First Prop</prop>
+				<prop key="two">Second Prop</prop>
+				<prop key="three">Third Prop</prop>
+				<prop key="three">New Third Prop</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

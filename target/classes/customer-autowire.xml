@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean id="customer" class="com.unisys.SpringCoreDemo.Customer" autowire="byName"> -->
+	<!-- <property name="id" value="123" /> -->
+	<!-- <property name="name" value="ABCD" /> -->
+	<!-- <property name="age" value="28" /> -->
+	<!-- </bean> -->
+
+	<bean id="customer" class="com.unisys.SpringCoreDemo.Customer"
+		autowire="constructor">
+		<constructor-arg name="id" value="123" />
+		<constructor-arg name="name" value="ABCD" />
+		<constructor-arg name="age" value="28" />
+	</bean>
+
+<!-- 	<bean id="address" class="com.unisys.SpringCoreDemo.Address"> -->
+<!-- 		<constructor-arg name="street" value="South Avenue" /> -->
+<!-- 		<constructor-arg name="city" value="Bangalore" /> -->
+<!-- 		<constructor-arg name="postalCode" value="112233" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="address1" class="com.unisys.SpringCoreDemo.Address"> -->
+<!-- 		<constructor-arg name="street" value="South Avenue" /> -->
+<!-- 		<constructor-arg name="city" value="Bangalore" /> -->
+<!-- 		<constructor-arg name="postalCode" value="112233" /> -->
+<!-- 	</bean> -->
+
+	<bean id="address2" class="com.unisys.SpringCoreDemo.Address">
+		<property name="street" value="South Avenue - 111" />
+		<property name="city" value="Bangalore - 111" />
+		<property name="postalCode" value="112233" />
+	</bean>
+
+
+</beans>
